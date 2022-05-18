@@ -1,0 +1,11 @@
+- movement script
+
+- make prefabs / sounds / particles
+
+- make gun shoot and be able to hit targets
+
+- give everything the correct sounds / particle effects 
+
+- make levels
+
+klanten gesprek 1 dat slogan / name / logo in game moet en dat civilians niet geschoten mogen worden.
