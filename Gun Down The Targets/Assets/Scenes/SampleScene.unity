@@ -252,12 +252,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0f5e4355a328f34398d948baf19c99d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkSpeed: 10
-  runSpeed: 20
-  groundDrag: 20
+  walkSpeed: 7
+  runSpeed: 15
+  groundDrag: 2
   airSpeed: 0.4
-  maxAirSpeed: 2
-  jumpForce: 10
+  jumpForce: 7
   playerHeight: 2
   ground:
     serializedVersion: 2
@@ -315,7 +314,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7be89b485f1ad77468b1d2bb7cb98031, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
