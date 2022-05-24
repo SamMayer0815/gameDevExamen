@@ -4,22 +4,16 @@ using UnityEngine;
 
 public class zoneManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    private bool hasBeenEntered = false;
     private void OnTriggerEnter(Collider col)
     {
-        if (col.gameObject.tag == "Player")
+        //checks if the player entered the zone and if he hasent entered it before
+        if (col.gameObject.tag == "Player" && !hasBeenEntered)
         {
+            hasBeenEntered = true;
+            //sets childs to ammount of targets in zone
             int childs = transform.childCount;
+            //for each target in the area it sets that the player has entered the zone so that the target goes up
             for(int i = 0; i < childs; i++)
             {
                 transform.GetChild(i).GetChild(0).GetComponent<targetHit>().enteredZone = true;

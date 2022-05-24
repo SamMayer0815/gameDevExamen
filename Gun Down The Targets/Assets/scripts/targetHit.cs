@@ -6,60 +6,58 @@ public class targetHit : MonoBehaviour
 {
     public bool isHit = false;
     public bool canBeHit = false;
-    public bool rotatedDown = false;
-    public bool rotatedUp = false;
+    public bool rotateDown = false;
+    public bool rotateUp = false;
     public bool enteredZone = false;
-    public float rotSpeedUp = -2f;
-    public float rotSpeedDown = 2f;
+    public float rotSpeedUp = -0.2f;
+    public float rotSpeedDown = 0.2f;
+    Vector3 v;
 
     // Start is called before the first frame update
     void Start()
     {
-        transform.rotation = Quaternion.Euler(0, 0, 90);
+        //sets the rotation to down when it starts
+        transform.Rotate(0, 0, 90);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(isHit && !canBeHit)
-        {
-            isHit = false;
-        }
-
         if (isHit && canBeHit)
         {
             canBeHit = false;
-            rotatedDown = true;
-            rotatedUp = false;
+            rotateDown = true;
+            rotateUp = false;
         }
 
         if (enteredZone)
         {
-            rotatedUp = true;
+            rotateUp = true;
             enteredZone = false;
         }
-
-        if (rotatedUp)
+        //starts rotating up
+        if (rotateUp)
         {
             transform.Rotate(0, 0, rotSpeedUp);
         }
-
-        if (transform.rotation.z < 0 && rotatedUp)
+        // if it has rotated far enough it stops retating and stops the rotating
+        if (transform.rotation.z < 0 && rotateUp)
         {
-            transform.rotation = Quaternion.Euler(0, 0, 0);
-            rotatedUp = false;
+            transform.Rotate(0, 0, 0);
+            rotateUp = false;
+            // if person entered the zone it goes up then when it has reached the correct rotation it can be shot
             canBeHit = true;
         }
-
-        if (rotatedDown)
+        //starts rotating down
+        if (rotateDown)
         {
             transform.Rotate(0, 0, rotSpeedDown);
         }
-
-        if (transform.rotation.z > 0.7 && rotatedDown)
+        // if it has rotated far enough it stops retating and stops the rotating
+        if (transform.rotation.z > 0.7 && rotateDown)
         {
-            transform.rotation = Quaternion.Euler(0, 0, 90);
-            rotatedDown = false;
+            transform.Rotate(0, 0, 90);
+            rotateDown = false;
         }
     }
 }

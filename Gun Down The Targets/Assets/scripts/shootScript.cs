@@ -9,21 +9,18 @@ public class shootScript : MonoBehaviour
     {
         if (Input.GetButtonDown("Fire1"))
         {
-            shoot();
-        }
-    }
-
-    void shoot()
-    {
-        RaycastHit hit;
-        if (Physics.Raycast(lookDir.transform.position, lookDir.transform.forward, out hit))
-        {
-            if(hit.transform.tag == "Enemy")
+            //Saves the information of hit target
+            RaycastHit hit;
+            //Checks if i hit something
+            if (Physics.Raycast(lookDir.transform.position, lookDir.transform.forward, out hit))
             {
-                hit.transform.parent.parent.GetComponent<targetHit>().isHit = true;
+                //Checks if i hit an enemy and if it could be hit
+                if (hit.transform.tag == "Target" && hit.transform.parent.parent.GetComponent<targetHit>().canBeHit == true)
+                {
+                    //Tells the target it has been hit
+                    hit.transform.parent.parent.GetComponent<targetHit>().isHit = true;
+                }
             }
         }
-
-
     }
 }

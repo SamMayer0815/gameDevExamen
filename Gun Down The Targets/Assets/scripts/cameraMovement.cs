@@ -6,8 +6,8 @@ public class cameraMovement : MonoBehaviour
 {
 
     [Header("sensitivity")]
-    public float sensX = 100f;
-    public float sensY = 100f;
+    public float sensX = 400f;
+    public float sensY = 400f;
 
     [Header("rotation")]
     public float rotationX;

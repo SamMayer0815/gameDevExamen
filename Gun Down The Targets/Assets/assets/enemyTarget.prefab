@@ -27,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2221546365114088239}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 2.1624317, y: 1.5462596, z: -1.6630776}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -108,7 +108,7 @@ GameObject:
   - component: {fileID: 2221546365510027067}
   m_Layer: 0
   m_Name: enemyTarget
-  m_TagString: Enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -142,7 +142,7 @@ GameObject:
   - component: {fileID: 2221546366423858128}
   m_Layer: 0
   m_Name: target
-  m_TagString: Enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -155,7 +155,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2221546365785496569}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.1694317, y: 1.6452596, z: -1.6630776}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -177,8 +177,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isHit: 0
   canBeHit: 1
-  rotatedDown: 1
-  rotatedUp: 0
+  rotateDown: 0
+  rotateUp: 0
   enteredZone: 0
   rotSpeedUp: -2
   rotSpeedDown: 2
@@ -193,7 +193,7 @@ GameObject:
   - component: {fileID: 2221546365925719383}
   m_Layer: 0
   m_Name: targetEnemy
-  m_TagString: Enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -229,7 +229,7 @@ GameObject:
   - component: {fileID: 2221546365235664343}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Enemy
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
