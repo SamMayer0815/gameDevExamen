@@ -12,4 +12,7 @@ Game dev examen repository.
                          
 24-05-2022 Werk dag 3 -> 1) Ik heb een script gemaakt dat de targets naar beneden zet. dan als ik de zone in kom gaan ze naar boven en als ik ze dan schiet gaan ze weer                             naar beneden.
                          2) Ik heb een zone script gemaakt dat alle targets in de zone rechtop zet als ik de zone in kom.
-                         
+                         3) Ik heb alle scripts en components die bij de civilian target horen toe gevoegd.
+                         4) Ik heb een bug gefixed waar de targets op de Y axis ging rotaten zonder dat ik ergens in mijn script die axis veranderde. Om dit te fixed had                             ik eerst debug.log gebruikt maar dat gaf geen hulp, daarna heb ik een andere methode geprobeert om de axis te rotaten en dat werkte ook niet. 
+                            en toen had ik de zone gemaakt door het zelf te maken in plaats van de eerste kopieren, plaken en dan de hele zone rotaten en dat werkte wel.
+      
