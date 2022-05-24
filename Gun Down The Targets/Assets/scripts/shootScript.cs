@@ -18,7 +18,10 @@ public class shootScript : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(lookDir.transform.position, lookDir.transform.forward, out hit))
         {
-            Debug.Log(hit.transform.tag);
+            if(hit.transform.tag == "Enemy")
+            {
+                hit.transform.parent.parent.GetComponent<targetHit>().isHit = true;
+            }
         }
 
 
