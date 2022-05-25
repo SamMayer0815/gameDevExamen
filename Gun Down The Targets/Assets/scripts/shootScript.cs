@@ -7,6 +7,7 @@ public class shootScript : MonoBehaviour
     private UIManager uiManager;
     private int enemiesKilled;
     private int civiliansKilled;
+
     void Start()
     {
         uiManager = GameObject.Find("Canvas").GetComponent<UIManager>();
@@ -25,13 +26,14 @@ public class shootScript : MonoBehaviour
                 if(hit.transform.name == "targetBody")
                 {
                     //if i hit enemy target update the enemy killed text
-                    if (hit.transform.parent.name == "targetEnemy")
+                    if (hit.transform.parent.name == "targetEnemy" && hit.transform.parent.parent.GetComponent<targetHit>().canBeHit == true)
                     {
+                        Debug.Log("test");
                         enemiesKilled++;
                         uiManager.enemyHit(enemiesKilled);
                     }
                     //if i hit civilian target update the civilian killed text
-                    if (hit.transform.parent.name == "targetCivilian")
+                    if (hit.transform.parent.name == "targetCivilian" && hit.transform.parent.parent.GetComponent<targetHit>().canBeHit == true)
                     {
                         civiliansKilled++;
                         uiManager.civilianHit(civiliansKilled);

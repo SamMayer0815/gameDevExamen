@@ -11,7 +11,6 @@ public class targetHit : MonoBehaviour
     public bool enteredZone = false;
     public float rotSpeedUp = -0.2f;
     public float rotSpeedDown = 0.2f;
-    Vector3 v;
 
     // Start is called before the first frame update
     void Start()
@@ -58,6 +57,7 @@ public class targetHit : MonoBehaviour
         {
             transform.Rotate(0, 0, 90);
             rotateDown = false;
+            Debug.Log(transform.rotation.z);
         }
     }
 }
