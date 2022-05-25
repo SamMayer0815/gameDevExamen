@@ -15,4 +15,4 @@ Game dev examen repository.
                          3) Ik heb alle scripts en components die bij de civilian target horen toe gevoegd.
                          4) Ik heb een bug gefixed waar de targets op de Y axis ging rotaten zonder dat ik ergens in mijn script die axis veranderde. Om dit te fixed had                             ik eerst debug.log gebruikt maar dat gaf geen hulp, daarna heb ik een andere methode geprobeert om de axis te rotaten en dat werkte ook niet. 
                             en toen had ik de zone gemaakt door het zelf te maken in plaats van de eerste kopieren, plaken en dan de hele zone rotaten en dat werkte wel.
-      
+                         5) Ik heb een UI toegevoegd die telt hoeveel civilians en enemies ik heb geraakt en het heeft een crosshair op het midden van het scherm 
