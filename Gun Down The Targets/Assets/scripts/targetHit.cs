@@ -53,11 +53,11 @@ public class targetHit : MonoBehaviour
             transform.Rotate(0, 0, rotSpeedDown);
         }
         // if it has rotated far enough it stops retating and stops the rotating
-        if (transform.rotation.z > 0.7 && rotateDown)
+        if (transform.rotation.z > 0.6 && rotateDown)
         {
-            transform.Rotate(0, 0, 90);
+            transform.rotation = Quaternion.Euler(0, transform.rotation.eulerAngles.y, 90);
+            //transform.Rotate(0, 0, 90.0f);
             rotateDown = false;
-            Debug.Log(transform.rotation.z);
         }
     }
 }

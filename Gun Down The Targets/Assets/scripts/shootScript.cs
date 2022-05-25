@@ -22,13 +22,13 @@ public class shootScript : MonoBehaviour
             //Checks if i hit something
             if (Physics.Raycast(lookDir.transform.position, lookDir.transform.forward, out hit))
             {
+                Debug.Log(hit.transform.name);
                 //Checks if i hit the target body
                 if(hit.transform.name == "targetBody")
                 {
                     //if i hit enemy target update the enemy killed text
                     if (hit.transform.parent.name == "targetEnemy" && hit.transform.parent.parent.GetComponent<targetHit>().canBeHit == true)
                     {
-                        Debug.Log("test");
                         enemiesKilled++;
                         uiManager.enemyHit(enemiesKilled);
                     }
