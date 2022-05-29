@@ -4,19 +4,17 @@ using UnityEngine;
 
 public class aimScript : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private Animator aiming;
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Fire2"))
+        if (Input.GetButton("Fire2"))
         {
-            Debug.Log("test");
-            transform.position = new Vector3(0, 0, 0);
+            aiming.SetBool("isAiming", true);
+        }else
+        {
+            aiming.SetBool("isAiming", false);
         }
     }
 }
