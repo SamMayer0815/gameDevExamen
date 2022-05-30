@@ -15,6 +15,7 @@ public class aimScript : MonoBehaviour
     public shootScript shoot_;
     public AudioSource source;
     public AudioClip gunShot;
+    public AudioClip reloadSound;
     private void Start()
     {
         reloading = GameObject.Find("reload").GetComponent<Animator>();
@@ -39,6 +40,7 @@ public class aimScript : MonoBehaviour
             isReloading = true;
             reloading.Play("Base Layer.reload", 0, 0);
             aimPosition.transform.localPosition = new Vector3(0, 0, 0);
+            source.PlayOneShot(reloadSound);
             StartCoroutine(reloadWait());
         }
 
@@ -52,7 +54,7 @@ public class aimScript : MonoBehaviour
     }
     IEnumerator reloadWait()
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(2f);
         isReloading = false;
         curAmmo = 30;
         uiManager.currentAmmo(curAmmo);

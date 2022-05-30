@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class shootScript : MonoBehaviour
@@ -42,7 +44,15 @@ public class shootScript : MonoBehaviour
                         hit.transform.parent.parent.GetComponent<targetHit>().isHit = true;
                     }
                 Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal));
-                }
+                StartCoroutine(wait());
+            }
             }
         }
+
+    IEnumerator wait()
+    {
+        yield return new WaitForSeconds(0.1f);
+        Destroy(GameObject.Find("impact(Clone)"));
+
+    }
 }
