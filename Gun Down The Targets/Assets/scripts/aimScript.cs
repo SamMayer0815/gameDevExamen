@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class aimScript : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class aimScript : MonoBehaviour
     public bool allowFire = true;
     public bool isReloading = false;
     public shootScript shoot_;
+    public AudioSource source;
+    public AudioClip gunShot;
     private void Start()
     {
         reloading = GameObject.Find("reload").GetComponent<Animator>();
@@ -43,6 +46,7 @@ public class aimScript : MonoBehaviour
         {
             shoot_.shoot();
             muzzleFlash.Play();
+            source.PlayOneShot(gunShot);
             StartCoroutine(fire());
         }
     }

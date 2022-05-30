@@ -20,7 +20,7 @@ public class targetHit : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if (isHit && canBeHit)
         {

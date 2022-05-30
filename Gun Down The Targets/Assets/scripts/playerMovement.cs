@@ -42,6 +42,7 @@ public class playerMovement : MonoBehaviour
     // Updates depending on the frame rate
     void FixedUpdate()
     {
+
         // calls movePlayer
         run();
         movePlayer();
