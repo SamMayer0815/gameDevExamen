@@ -7,6 +7,7 @@ public class shootScript : MonoBehaviour
     public UIManager uiManager;
     public int enemiesKilled;
     public int civiliansKilled;
+    public GameObject impactEffect;
     public void Start()
     {
         uiManager = GameObject.Find("Canvas").GetComponent<UIManager>();
@@ -14,7 +15,6 @@ public class shootScript : MonoBehaviour
     // Update is called once per frame
     public void shoot()
     {
-        Debug.Log("te");
             //Saves the information of hit target
             RaycastHit hit;
             //Checks if i hit something
@@ -41,6 +41,7 @@ public class shootScript : MonoBehaviour
                         //Tells the target it has been hit
                         hit.transform.parent.parent.GetComponent<targetHit>().isHit = true;
                     }
+                Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal));
                 }
             }
         }

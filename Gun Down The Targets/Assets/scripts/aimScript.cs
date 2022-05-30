@@ -24,7 +24,7 @@ public class aimScript : MonoBehaviour
     {
         if (Input.GetButton("Fire2"))
         {
-            aimPosition.transform.localPosition = new Vector3(-0.262f, 0.162f, 0);
+            aimPosition.transform.localPosition = new Vector3(-0.262f, 0.1602f, -0.366f);
         }
         else if (!Input.GetButton("Fire2"))
         {
