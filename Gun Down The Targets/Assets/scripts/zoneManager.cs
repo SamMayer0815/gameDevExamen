@@ -1,14 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class zoneManager : MonoBehaviour
 {
     private bool hasBeenEntered = false;
-    Collider collider;
+    Collider collider_;
     private void Start()
     {
-        collider = GetComponent<Collider>();
+        collider_ = GetComponent<Collider>();
     }
     private void OnTriggerEnter(Collider col)
     {
@@ -16,7 +14,7 @@ public class zoneManager : MonoBehaviour
         if (col.gameObject.tag == "Player" && !hasBeenEntered)
         {
             hasBeenEntered = true;
-            collider.enabled = !collider.enabled;
+            collider_.enabled = !collider_.enabled;
             //sets childs to ammount of targets in zone
             int childs = transform.childCount;
             //for each target in the area it sets that the player has entered the zone so that the target goes up

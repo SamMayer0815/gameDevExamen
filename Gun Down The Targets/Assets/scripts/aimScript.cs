@@ -6,6 +6,7 @@ public class aimScript : MonoBehaviour
 {
     private Animator reloading;
     public GameObject aimPosition;
+
     private void Start()
     {
         reloading = GameObject.Find("reload").GetComponent<Animator>();
@@ -18,7 +19,7 @@ public class aimScript : MonoBehaviour
         {
             aimPosition.transform.localPosition = new Vector3(-0.262f, 0.162f, 0);
         }
-        else if(!Input.GetButton("Fire2"))
+        else if (!Input.GetButton("Fire2"))
         {
             aimPosition.transform.localPosition = new Vector3(0, 0, 0);
             Debug.Log("t");
@@ -26,7 +27,7 @@ public class aimScript : MonoBehaviour
 
         if (Input.GetKeyDown("r"))
         {
-            reloading.Play("Base Layer.reload",0 ,0);
+            reloading.Play("Base Layer.reload", 0, 0);
             aimPosition.transform.localPosition = new Vector3(0, 0, 0);
             reloadWait();
         }
@@ -36,4 +37,3 @@ public class aimScript : MonoBehaviour
         yield return new WaitForSeconds(3);
     }
 }
-//(0.33, -0.28, 0.56)
