@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,6 +7,8 @@ public class UIManager : MonoBehaviour
     private Text enemyKilledText;
     [SerializeField]
     private Text civilianKilledText;
+    [SerializeField]
+    private Text curAmmoText;
 
     public void enemyHit(int count)
     {
@@ -20,5 +20,10 @@ public class UIManager : MonoBehaviour
     {
         //update text if civilian hit
         civilianKilledText.text = "Civilians killed : " + count;
+    }
+
+    public void currentAmmo(int count)
+    {
+        curAmmoText.text = "" + count;
     }
 }

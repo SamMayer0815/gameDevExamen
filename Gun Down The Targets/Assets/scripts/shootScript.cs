@@ -4,19 +4,17 @@ public class shootScript : MonoBehaviour
 {
     public Camera lookDir;
 
-    private UIManager uiManager;
-    private int enemiesKilled;
-    private int civiliansKilled;
-
-    void Start()
+    public UIManager uiManager;
+    public int enemiesKilled;
+    public int civiliansKilled;
+    public void Start()
     {
         uiManager = GameObject.Find("Canvas").GetComponent<UIManager>();
     }
     // Update is called once per frame
-    void Update()
+    public void shoot()
     {
-        if (Input.GetButtonDown("Fire1"))
-        {
+        Debug.Log("te");
             //Saves the information of hit target
             RaycastHit hit;
             //Checks if i hit something
@@ -46,5 +44,4 @@ public class shootScript : MonoBehaviour
                 }
             }
         }
-    }
 }
