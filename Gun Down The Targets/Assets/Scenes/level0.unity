@@ -814,6 +814,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CivilianTarget
       objectReference: {fileID: 0}
+    - target: {fileID: 4070423680779053714, guid: c04e22a6d91296c4495bbc5201bf4328, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 7880805904546956011, guid: c04e22a6d91296c4495bbc5201bf4328, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -4953,6 +4957,10 @@ PrefabInstance:
     - target: {fileID: 2221546365510027066, guid: 621afb47b06d43a41a0c8a52409a9f92, type: 3}
       propertyPath: m_Name
       value: enemyTarget
+      objectReference: {fileID: 0}
+    - target: {fileID: 2221546365510027066, guid: 621afb47b06d43a41a0c8a52409a9f92, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 2221546365510027067, guid: 621afb47b06d43a41a0c8a52409a9f92, type: 3}
       propertyPath: m_RootOrder

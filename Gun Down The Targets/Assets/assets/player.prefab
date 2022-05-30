@@ -9890,6 +9890,7 @@ GameObject:
   - component: {fileID: 1492567875916881875}
   - component: {fileID: 1492567875916881902}
   - component: {fileID: 1492567875916881901}
+  - component: {fileID: 9024457772141645420}
   m_Layer: 0
   m_Name: player
   m_TagString: Player
@@ -10033,6 +10034,18 @@ MonoBehaviour:
   enemiesKilled: 0
   civiliansKilled: 0
   impactEffect: {fileID: 1492567875399823864}
+--- !u!114 &9024457772141645420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1492567875916881876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0c26985e3267794395e291a297e5b53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1492567876502108757
 GameObject:
   m_ObjectHideFlags: 0
