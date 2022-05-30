@@ -85,6 +85,7 @@ MonoBehaviour:
   enteredZone: 0
   rotSpeedUp: -2
   rotSpeedDown: 2
+  GameObject: {fileID: 6512256189057869088}
 --- !u!1 &5668264244556733195
 GameObject:
   m_ObjectHideFlags: 0

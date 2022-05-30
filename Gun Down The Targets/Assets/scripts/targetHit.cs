@@ -11,6 +11,7 @@ public class targetHit : MonoBehaviour
     public bool enteredZone = false;
     public float rotSpeedUp = -0.2f;
     public float rotSpeedDown = 0.2f;
+    public Transform GameObject;
 
     // Start is called before the first frame update
     void Start()
@@ -40,7 +41,7 @@ public class targetHit : MonoBehaviour
             transform.Rotate(0, 0, rotSpeedUp);
         }
         // if it has rotated far enough it stops retating and stops the rotating
-        if (transform.rotation.z < 0 && rotateUp)
+        if (GameObject.eulerAngles.z < 5 && rotateUp)
         {
             transform.Rotate(0, 0, 0);
             rotateUp = false;
@@ -53,7 +54,7 @@ public class targetHit : MonoBehaviour
             transform.Rotate(0, 0, rotSpeedDown);
         }
         // if it has rotated far enough it stops retating and stops the rotating
-        if (transform.rotation.z > 0.6 && rotateDown)
+        if (GameObject.eulerAngles.z > 90 && rotateDown)
         {
             transform.rotation = Quaternion.Euler(0, transform.rotation.eulerAngles.y, 90);
             //transform.Rotate(0, 0, 90.0f);
