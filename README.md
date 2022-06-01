@@ -16,3 +16,20 @@ Game dev examen repository.
                          4) Ik heb een bug gefixed waar de targets op de Y axis ging rotaten zonder dat ik ergens in mijn script die axis veranderde. Om dit te fixed had                             ik eerst debug.log gebruikt maar dat gaf geen hulp, daarna heb ik een andere methode geprobeert om de axis te rotaten en dat werkte ook niet. 
                             en toen had ik de zone gemaakt door het zelf te maken in plaats van de eerste kopieren, plaken en dan de hele zone rotaten en dat werkte wel.
                          5) Ik heb een UI toegevoegd die telt hoeveel civilians en enemies ik heb geraakt en het heeft een crosshair op het midden van het scherm 
+
+25-05-2022 Werk dag 4 -> 1) Ik heb de kill count gefixed want het getal ging niet boven de 1.
+                         2) Ik heb gefixed dat als de target werd geschoten dat hij niet goed rotaten.
+                         3) Ik heb gefixed dat als je een zone in komt en dan er uit gaat dat je de zone schiet door zodra je in de zone komt de hitbox van de zone uit 
+                            te zetten.
+                         4) Gefixed dat dat als je de camera beweegt dat de gun dan hem niet goed volgt en gaat uitrekken door de camera en het wapen dezelde scale te                               geven.
+
+27-05-2022 Werk dag 5 -> 1) Een begin aan een aimscript gemaakt.
+
+29-05-2022 Werk dag 6 -> 1) het aimscript afgemaakt.
+
+30-05-2022 Werk dag 7 -> 1) error fix vanwege de naam collideren in een script dus heb ik de naam naar collider_ verandert.
+                         2) een reload animation gemaakt en toegevoegd.
+                         3) Particles gemaakt voor de gun muzzle flash en als je de targets raakt en bullet hit particle.
+                         4) Een gun shot geluid en reload geluid toegevoegd.
+                         5) Een tutorial level gemaakt en nog een ander level gemaakt.
+                         
