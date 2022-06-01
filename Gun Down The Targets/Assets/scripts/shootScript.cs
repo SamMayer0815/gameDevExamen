@@ -12,7 +12,6 @@ public class shootScript : MonoBehaviour
     public GameObject impactEffect;
     public void Start()
     {
-        uiManager = GameObject.Find("Canvas").GetComponent<UIManager>();
     }
     // Update is called once per frame
     public void shoot()

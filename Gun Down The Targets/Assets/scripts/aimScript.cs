@@ -5,7 +5,7 @@ using UnityEngine.Audio;
 
 public class aimScript : MonoBehaviour
 {
-    private UIManager uiManager;
+    public UIManager uiManager;
     private Animator reloading;
     public GameObject aimPosition;
     public ParticleSystem muzzleFlash;
@@ -19,7 +19,6 @@ public class aimScript : MonoBehaviour
     private void Start()
     {
         reloading = GameObject.Find("reload").GetComponent<Animator>();
-        uiManager = GameObject.Find("Canvas").GetComponent<UIManager>();
         shoot_ = GameObject.Find("player").GetComponent<shootScript>();
     }
 
