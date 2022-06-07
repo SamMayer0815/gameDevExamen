@@ -33,3 +33,9 @@ Game dev examen repository.
                          4) Een gun shot geluid en reload geluid toegevoegd.
                          5) Een tutorial level gemaakt en nog een ander level gemaakt.
                          
+01-06-2022 Werk dag 8 -> 1) Ik heb een main menu gemaakt.
+                         2) Ik heb level 1 afgemaakt en een level 2 gemaakt.
+                         
+07-06-2022 Werk dag 9 -> 1) Ik heb weer getest en vond dat time niet goed deed dus dat heb ik gefixt
+                         2) bij level 2 een world border toegevoegd
+                         
