@@ -9,13 +9,20 @@ public class aimScript : MonoBehaviour
     private Animator reloading;
     public GameObject aimPosition;
     public ParticleSystem muzzleFlash;
+
+    [Header("ammo")]
     public int curAmmo = 30;
     public bool allowFire = true;
     public bool isReloading = false;
+
+    [Header("script")]
     public shootScript shoot_;
+
+    [Header("Audio")]
     public AudioSource source;
     public AudioClip gunShot;
     public AudioClip reloadSound;
+
     private void Start()
     {
         reloading = GameObject.Find("reload").GetComponent<Animator>();
@@ -25,6 +32,7 @@ public class aimScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //if right click move gun to downsight location
         if (Input.GetButton("Fire2"))
         {
             aimPosition.transform.localPosition = new Vector3(-0.262f, 0.1602f, -0.366f);
@@ -33,7 +41,7 @@ public class aimScript : MonoBehaviour
         {
             aimPosition.transform.localPosition = new Vector3(0, 0, 0);
         }
-
+        //if press r and not currently reloading start reloading
         if (Input.GetKeyDown("r") && !isReloading)
         {
             isReloading = true;
@@ -42,7 +50,7 @@ public class aimScript : MonoBehaviour
             source.PlayOneShot(reloadSound);
             StartCoroutine(reloadWait());
         }
-
+        //if left click, can fire, ammo is more than 0 and arent currently reloading shoot
         if (Input.GetButton("Fire1") && allowFire && curAmmo > 0 && !isReloading)
         {
             shoot_.shoot();
@@ -51,6 +59,7 @@ public class aimScript : MonoBehaviour
             StartCoroutine(fire());
         }
     }
+    //waits for 2 seconds before giving the ammo and updating ammo
     IEnumerator reloadWait()
     {
         yield return new WaitForSeconds(2f);
@@ -58,7 +67,7 @@ public class aimScript : MonoBehaviour
         curAmmo = 30;
         uiManager.currentAmmo(curAmmo);
     }
-
+    //limits fire rate
     IEnumerator fire()
     {
         allowFire = false;

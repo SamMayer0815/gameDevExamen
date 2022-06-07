@@ -4,16 +4,19 @@ using UnityEngine;
 
 public class shootScript : MonoBehaviour
 {
+    [Header("Camera")]
     public Camera lookDir;
 
+    [Header("UI")]
     public UIManager uiManager;
+
+    [Header("Targets")]
     public int enemiesKilled;
     public int civiliansKilled;
+
+    [Header("gameObject")]
     public GameObject impactEffect;
-    public void Start()
-    {
-    }
-    // Update is called once per frame
+
     public void shoot()
     {
             //Saves the information of hit target
@@ -42,7 +45,9 @@ public class shootScript : MonoBehaviour
                         //Tells the target it has been hit
                         hit.transform.parent.parent.GetComponent<targetHit>().isHit = true;
                     }
+                //spawns hit effect on target hit location
                 Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal));
+                //starts a wait timer
                 StartCoroutine(wait());
             }
             }
@@ -50,6 +55,7 @@ public class shootScript : MonoBehaviour
 
     IEnumerator wait()
     {
+        //after 0.1 seconds delete the impact clone
         yield return new WaitForSeconds(0.1f);
         Destroy(GameObject.Find("impact(Clone)"));
 

@@ -3,6 +3,7 @@ using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
+    [Header("text fields")]
     [SerializeField]
     private Text enemyKilledText;
     [SerializeField]
@@ -24,6 +25,7 @@ public class UIManager : MonoBehaviour
 
     public void currentAmmo(int count)
     {
+        //update text to current ammo
         curAmmoText.text = "" + count;
     }
 }

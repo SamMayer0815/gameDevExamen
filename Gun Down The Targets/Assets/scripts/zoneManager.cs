@@ -4,6 +4,7 @@ public class zoneManager : MonoBehaviour
 {
     private bool hasBeenEntered = false;
     Collider collider_;
+
     private void Start()
     {
         collider_ = GetComponent<Collider>();
@@ -14,6 +15,7 @@ public class zoneManager : MonoBehaviour
         if (col.gameObject.tag == "Player" && !hasBeenEntered)
         {
             hasBeenEntered = true;
+            //turns collider off
             collider_.enabled = !collider_.enabled;
             //sets childs to ammount of targets in zone
             int childs = transform.childCount;

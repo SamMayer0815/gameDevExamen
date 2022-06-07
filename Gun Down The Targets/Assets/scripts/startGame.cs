@@ -16,6 +16,7 @@ public class startGame : MonoBehaviour
     // Update is called once per frame
     void start()
     {
+        //if clicked load level 0
         SceneManager.LoadScene("level0");
     }
 }

@@ -77,6 +77,7 @@ public class playerMovement : MonoBehaviour
 
     void run()
     {
+        //while press left shiff increase speed
         if (Input.GetKey(KeyCode.LeftShift))
         {
             speed = runSpeed;
@@ -91,6 +92,7 @@ public class playerMovement : MonoBehaviour
 
     void jump()
     {
+        //if press spacebar and is grounded add force upwards
         if (Input.GetKey(KeyCode.Space) && grounded)
         {
             rb.velocity = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
@@ -98,6 +100,7 @@ public class playerMovement : MonoBehaviour
         }
     }
 
+    //limits the max speed
     void speedLimiter()
     {
         Vector3 flatVel = new Vector3(rb.velocity.x, 0, rb.velocity.z);
