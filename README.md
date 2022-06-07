@@ -1,9 +1,8 @@
 # gameDevExamen
 Game dev examen repository.
 
-17-05-2022 Klanten gesprek 1 ->  1) Ik heb gehoord dat ik het logo, slogan en bedrijfs naam in de game moet zetten en dat heb ik ook gedaan.
-                                 2) Het advies gekregen dat ik in mijn GGD moets schrijven dat ik niet ok civivilians moet schieten.
-                                 
+17-05-2022 Klanten gesprek 1 -> 1) Het advies gekregen dat ik in mijn GGD moets schrijven dat ik niet ok civivilians moet schieten.
+
 18-05-2022 Werk dag 1 -> 1) Ik heb een movement script gemaakt dat kan lopen in alle richtingen en kan rennen en springen.
                          2) Ik heb een looking script gemaakt waarmee ik kan rond kijken en op de Y axis is er een lock zodat ik niet te ver naar boven of beneden kan                               kijken.
                          
@@ -16,6 +15,8 @@ Game dev examen repository.
                          4) Ik heb een bug gefixed waar de targets op de Y axis ging rotaten zonder dat ik ergens in mijn script die axis veranderde. Om dit te fixed had                             ik eerst debug.log gebruikt maar dat gaf geen hulp, daarna heb ik een andere methode geprobeert om de axis te rotaten en dat werkte ook niet. 
                             en toen had ik de zone gemaakt door het zelf te maken in plaats van de eerste kopieren, plaken en dan de hele zone rotaten en dat werkte wel.
                          5) Ik heb een UI toegevoegd die telt hoeveel civilians en enemies ik heb geraakt en het heeft een crosshair op het midden van het scherm 
+
+24-05-2022 Klanten gesprek 2 -> 1) Ik heb gehoord dat ik het logo, slogan en bedrijfs naam in de game moet zetten en dat heb ik ook gedaan.
 
 25-05-2022 Werk dag 4 -> 1) Ik heb de kill count gefixed want het getal ging niet boven de 1.
                          2) Ik heb gefixed dat als de target werd geschoten dat hij niet goed rotaten.
@@ -32,4 +33,10 @@ Game dev examen repository.
                          3) Particles gemaakt voor de gun muzzle flash en als je de targets raakt en bullet hit particle.
                          4) Een gun shot geluid en reload geluid toegevoegd.
                          5) Een tutorial level gemaakt en nog een ander level gemaakt.
+                         
+01-06-2022 Werk dag 8 -> 1) Ik heb een main menu gemaakt.
+                         2) Ik heb level 1 afgemaakt en een level 2 gemaakt.
+                         
+07-06-2022 Werk dag 9 -> 1) Ik heb weer getest en vond dat time niet goed deed dus dat heb ik gefixt
+                         2) bij level 2 een world border toegevoegd
                          
