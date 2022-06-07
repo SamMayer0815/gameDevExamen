@@ -1,0 +1,20 @@
+DOCUMENTATIE VNA HET PROCES
+log boek
+github commits
+code commentaar	
+----------------
+VOORBEREIDING
+ggd met feedback verwerkt
+logboek laat zien dat gesprek is gebeured en wlke veranderingen er zijn
+document met ontwikkelomgeving
+----------------
+REALISEREN EN TESTEN
+game komt overeen met GDD
+logboek laat zien dat gesprek is gebeurd en welke aanpassingen er in game zijn gekomen
+document met resultaat van test speler met welke aanpassingen
+-----------------
+PRESENTATIE EN OVERDRACHT
+broncode opgelevered
+demo van game ontwikkelprocess toegelicht
+wat in de toekomst nog kan ( verbeteringen en/of uitbreidingen
+overdracht half A4tje hoe iemand anders het kan overnemen
