@@ -1,9 +1,8 @@
 # gameDevExamen
 Game dev examen repository.
 
-17-05-2022 Klanten gesprek 1 ->  1) Ik heb gehoord dat ik het logo, slogan en bedrijfs naam in de game moet zetten en dat heb ik ook gedaan.
-                                 2) Het advies gekregen dat ik in mijn GGD moets schrijven dat ik niet ok civivilians moet schieten.
-                                 
+17-05-2022 Klanten gesprek 1 -> 1) Het advies gekregen dat ik in mijn GGD moets schrijven dat ik niet ok civivilians moet schieten.
+
 18-05-2022 Werk dag 1 -> 1) Ik heb een movement script gemaakt dat kan lopen in alle richtingen en kan rennen en springen.
                          2) Ik heb een looking script gemaakt waarmee ik kan rond kijken en op de Y axis is er een lock zodat ik niet te ver naar boven of beneden kan                               kijken.
                          
@@ -16,6 +15,8 @@ Game dev examen repository.
                          4) Ik heb een bug gefixed waar de targets op de Y axis ging rotaten zonder dat ik ergens in mijn script die axis veranderde. Om dit te fixed had                             ik eerst debug.log gebruikt maar dat gaf geen hulp, daarna heb ik een andere methode geprobeert om de axis te rotaten en dat werkte ook niet. 
                             en toen had ik de zone gemaakt door het zelf te maken in plaats van de eerste kopieren, plaken en dan de hele zone rotaten en dat werkte wel.
                          5) Ik heb een UI toegevoegd die telt hoeveel civilians en enemies ik heb geraakt en het heeft een crosshair op het midden van het scherm 
+
+24-05-2022 Klanten gesprek 2 -> 1) Ik heb gehoord dat ik het logo, slogan en bedrijfs naam in de game moet zetten en dat heb ik ook gedaan.
 
 25-05-2022 Werk dag 4 -> 1) Ik heb de kill count gefixed want het getal ging niet boven de 1.
                          2) Ik heb gefixed dat als de target werd geschoten dat hij niet goed rotaten.
