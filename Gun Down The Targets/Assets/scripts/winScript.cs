@@ -73,6 +73,10 @@ public class winScript : MonoBehaviour
         }
         if (currentScene == "level1")
         {
+            SceneManager.LoadScene("level2");
+        }
+        if (currentScene == "level2")
+        {
             SceneManager.LoadScene("Mainmenu");
         }
     }
