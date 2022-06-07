@@ -13,6 +13,8 @@ public class winScript : MonoBehaviour
     private Scene scene;
     private string currentScene;
     private int curTime;
+    private float startTime;
+    private int startTimeInt;
     private float time;
     public Button button;
     public cameraMovement cam;
@@ -34,6 +36,7 @@ public class winScript : MonoBehaviour
         enemyCount = gameObjects.Length;
         scene = SceneManager.GetActiveScene();
         currentScene = scene.name;
+        startTime = Time.time;
     }
 
     // Update is called once per frame
@@ -51,12 +54,13 @@ public class winScript : MonoBehaviour
             rigidbody.constraints = RigidbodyConstraints.FreezeAll;
             cam.enabled = false;
             time = Time.time;
+            startTimeInt = (int) startTime;
             curTime = (int) time;
             hasWon = true;
             menu.SetActive(true);
-            rawTime.text = "Raw time = " + curTime;
+            rawTime.text = "Raw time = " + (curTime - startTimeInt);
             extraTime.text = "Extra time = " + (playerScript.civiliansKilled * 5) + " Seconds";
-            setTime.text = "Final time = " + Mathf.Round((curTime + (playerScript.civiliansKilled * 5)) * 1000) / 1000;  
+            setTime.text = "Final time = " + Mathf.Round(((curTime - startTimeInt) + (playerScript.civiliansKilled * 5)) * 1000) / 1000;  
         }
 
     }
