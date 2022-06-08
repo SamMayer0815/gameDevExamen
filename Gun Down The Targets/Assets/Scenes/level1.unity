@@ -1967,6 +1967,10 @@ PrefabInstance:
       propertyPath: uiManager
       value: 
       objectReference: {fileID: 6260424110667745069}
+    - target: {fileID: 579231268867027842, guid: f678e08f5897a27468fee6300b159b14, type: 3}
+      propertyPath: m_Constraints
+      value: 112
+      objectReference: {fileID: 0}
     - target: {fileID: 579231268867027900, guid: f678e08f5897a27468fee6300b159b14, type: 3}
       propertyPath: uiManager
       value: 

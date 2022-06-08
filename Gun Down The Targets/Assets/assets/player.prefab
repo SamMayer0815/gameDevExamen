@@ -98,8 +98,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ee2bd9ca6d19ff41aa995e82b4d212a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sensX: 400
-  sensY: 400
+  sensX: 150
+  sensY: 150
   rotationX: 0
   rotationY: 0
   player: {fileID: 579231268867027902}
